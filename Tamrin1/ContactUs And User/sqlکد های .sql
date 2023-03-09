@@ -89,7 +89,8 @@ COMMIT;
 -----------------------------------------------------
 
 --> SOFT DELETE
-
+0 = status = Diactive
+1 = status = Active
 
 -->  Delete data of table `user`
 
@@ -109,5 +110,9 @@ SELECT * FROM `user` WHERE status='1'
 UPDATE user
 SET status = '1'
 WHERE status = 0;
+
+-->  2Update data of table `user`
+
+UPDATE `user` SET `is_active`='deactive' WHERE `id`=1
 
 -----------------------------------------------------
