@@ -53,8 +53,8 @@ COMMIT;
 
 -->  Delete data of table `user` with enum
 
-DELETE FROM contactus WHERE `contactus`.`status` = '1'
-DELETE FROM contactus WHERE `contactus`.`status` = '0'
+DELETE FROM user WHERE `user`.`status` = '1'
+DELETE FROM user WHERE `user`.`status` = '0'
 
 -->  Select data of table `user`
 

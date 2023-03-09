@@ -30,8 +30,8 @@ CREATE TABLE  `contactus` (
 
 
 INSERT INTO `contactus` (`id`, `fname`, `lname`, `email`, `tel`, `title`, `textbody`) VALUES
-(1, 'Yasin', 'Kiyani', 'YasinKiyani@gmail.com', '09918654559', 'کمکم کنید ', 'یک مشکلی برای خرید پیش امده'),
-(2, 'Ali', 'Kiyani', 'AliKiyani@gmail.com', '09303818172', 'تشکر از سایت', 'سایت بسیار مشکل گشا و درجه یکی دارید');
+(1, 'Yasin', 'Kiyani', 'YasinKiyani@gmail.com', '09918654559', 'کمکم کنید ', 'یک مشکلی برای خرید پیش امده', '1'),
+(2, 'Ali', 'Kiyani', 'AliKiyani@gmail.com', '09303818172', 'تشکر از سایت', 'سایت بسیار مشکل گشا و درجه یکی دارید', '0');
 
 
 -----------------------------------------------------
@@ -47,7 +47,7 @@ DELETE FROM contactus WHERE `contactus`.`status` = '0'
 
 -->  Select data of table `contactus`
 
-SELECT * FROM `user` WHERE status='1'
+SELECT * FROM `contactus` WHERE status='1'
 
 -->  Update data of table `contactus`
 
@@ -115,8 +115,8 @@ COMMIT;
 
 -->  Delete data of table `user` with enum
 
-DELETE FROM contactus WHERE `contactus`.`status` = '1'
-DELETE FROM contactus WHERE `contactus`.`status` = '0'
+DELETE FROM user WHERE `contactus`.`status` = '1'
+DELETE FROM user WHERE `contactus`.`status` = '0'
 
 -->  Select data of table `user`
 
