@@ -7,49 +7,6 @@ USE `kiyanpcshop`;
 -----------------------------------------------------
 
 
---> Table structure for table `contactus`
-
-
-CREATE TABLE  `contactus` (
-  `id` int NOT NULL AUTO_INCREMENT,
-  `fname` varchar(50) CHARACTER SET utf8 COLLATE utf8_persian_ci NOT NULL,
-  `lname` varchar(50) CHARACTER SET utf8 COLLATE utf8_persian_ci NOT NULL,
-  `email` varchar(50) CHARACTER SET utf8 COLLATE utf8_persian_ci NOT NULL,
-  `tel` char(50) CHARACTER SET utf8 COLLATE utf8_persian_ci NOT NULL,
-  `title` varchar(50) CHARACTER SET utf8 COLLATE utf8_persian_ci NOT NULL,
-  `textbody` text CHARACTER SET utf8 COLLATE utf8_persian_ci NOT NULL,
-  PRIMARY KEY (`id`),
-  UNIQUE KEY `email` (`email`),
-  UNIQUE KEY `tel` (`tel`)
-) ENGINE=MyISAM AUTO_INCREMENT=83 DEFAULT CHARSET=utf8mb3 COLLATE=utf8_persian_ci;
-
---------------------------------------------------
-
---> insert data for table `contactus`
-
-
-INSERT INTO `contactus` (`id`, `fname`, `lname`, `email`, `tel`, `title`, `textbody`) VALUES
-(1, 'Yasin', 'Kiyani', 'YasinKiyani@gmail.com', '09918654559', 'کمکم کنید ', 'یک مشکلی برای خرید پیش امده'),
-(2, 'Ali', 'Kiyani', 'AliKiyani@gmail.com', '09303818172', 'تشکر از سایت', 'سایت بسیار مشکل گشا و درجه یکی دارید');
-
-
------------------------------------------------------
-
--->  Delete data of table `contactus`
-
-DELETE FROM contactus WHERE `contactus`.`id` = 2
-DELETE FROM contactus WHERE `contactus`.`fname` = 'yasin'
-
-
------------------------------------------------------
-
--->  Select data of table `contactus`
-
-SELECT * FROM `contactus` WHERE id=1
-
--- --------------------------------------------------------
-
-
 --> Table structure for table `user`
 
 
@@ -88,14 +45,11 @@ COMMIT;
 
 -----------------------------------------------------
 
---> SOFT DELETE
 
+
+--> SOFT DELETE
 0 = status = Diactive
 1 = status = Active
-
--->  Delete data of table `user`
-
-DELETE FROM contactus WHERE `contactus`.`id` = 2
 
 -->  Delete data of table `user` with enum
 

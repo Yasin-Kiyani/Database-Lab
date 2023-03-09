@@ -113,6 +113,7 @@ UPDATE user
 SET status = '1'
 WHERE status = 0;
 
+
 -->  2Update data of table `user`
 
 UPDATE `user` SET `is_active`='deactive' WHERE `id`=1
