@@ -61,6 +61,9 @@ include 'PHP_Settings/db.php';
 include 'PHP_Settings/security.php';
 include 'PHP_Settings/functions.php';
 
+
+//نمایش فقط کالا های فعال
+
 $dbc = new db( $dbHost, $dbUser, $dbPass, $dbName );
 $sql = "SELECT * FROM product WHERE  status='1'";
 
