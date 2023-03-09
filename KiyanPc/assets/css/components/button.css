@@ -1,0 +1,316 @@
+/*  یاسین کیانی : دانشجوی  ترم چهارم رشته ی کاردانی پیوسته کامپیوتر نرم افزار در دانشگاه : مهاجر */
+
+
+/* Font */
+
+@font-face {
+  font-family: 'Yekan';
+  src: url('../fonts/Yekan.eot?-wwn5ej');
+  src: url('../fonts/Yekan.eot?#iefix-wwn5ej') format('embedded-opentype'),
+  url('../fonts/Yekan.woff?-wwn5ej') format('woff'),
+  url('../fonts/Yekan.ttf?-wwn5ej') format('truetype'),
+  url('../fonts/Yekan.svg?-wwn5ej#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Button with icon */
+
+.btn i{
+  font-size:18px;
+  padding:0 8px 0 0;
+  vertical-align:middle;	
+}
+
+/* Button topnav*/
+
+.btn-topnavigate{
+  float:left;
+  min-width:64px;
+  height:40px;
+  font-size:18px;
+  cursor:pointer;
+  padding:0 24px 0 16px;
+  border-radius:2em;
+  vertical-align:middle;
+  margin:8px 0 8px 8px;
+  border-width:1px;
+  font-family: 'Yekan';
+}
+
+/* Disabled Button */
+
+.btn[disabled]{
+  background-color:rgba(95,71,165,0,12);
+  color:rgba(95,71,165,0,38);
+  outline:none;
+  cursor:inherit;
+}
+
+/* Button style */
+
+.btn{
+  font-family: 'Yekan';	
+  min-width:64px;
+  height:40px;
+  font-size:14px;
+  cursor:pointer;
+  padding:0 24px 0 16px;
+  border-radius:2em;
+  vertical-align:middle;
+  margin:8px 0px 8px 8px;
+  border-width:1px; 
+  display:inline-block;
+  transition: all .3s;
+}
+
+/* Filled Button */
+
+.btn-filled.primary {
+  background-color:#FF7E00;
+  color:#FFFFFF;
+  border:none;
+  vertical-align:middle;
+  display:inline-block;
+  opacity: 88%;
+}
+	
+/* Filled Button Hover */
+	
+.btn-filled.primary:hover {
+  color:#FFFFFF;
+	transition: all .3s;
+  /* background-color:#21005E; */
+  vertical-align:middle;
+  box-shadow: 0 0 3px 1px #949494;
+ background-color: #1989FF;
+}
+
+/* Filled Button Focus */
+
+.btn-filled.primary:focus {
+  background-color:#0064FF;
+  color:#FFFFFF;
+  outline:none;
+}
+
+/* Filled Button Active */
+
+.btn-filled.primary:active {
+  background-color:#C84A00;
+  outline:none;
+  color: #FFFFFF;
+}
+
+/* Outline Button */
+
+.btn-outline.primary {
+  border-color:#79747E;
+  color:#6750A4;
+  background: transparent;
+  opacity: 88%;
+}
+
+
+/* Outline Button Hover */
+	
+.btn-outline.primary:hover {
+  background: rgba(215, 198, 255, 0.467);
+  opacity: 88%;
+}
+
+/* Outline Button Focus */
+
+.btn-outline.primary:focus {
+  background: rgba(208, 188, 255, 0.576);
+  outline:none;
+  opacity: 96%;
+  
+}
+
+/* Outline Button Active */
+
+.btn-outline.primary:active {
+  border-color:#6750A4;
+  background: rgba(204, 183, 252, 0.776);
+  opacity: 100%;
+}
+
+/* Text Button Style */
+
+.btn-text{
+  min-width:48px;
+  height:40px;
+  font-size:14px;
+  cursor:pointer;
+  padding:0 16px 0 12px;
+  border-radius:2em;
+  vertical-align:middle;
+  margin:8px 0px 0px 8px;
+  border-width:1px;
+  font-family: 'Roboto Black';
+  outline: none;
+  background: transparent;
+  transition: all .3s;
+}
+
+
+/* Text Button */
+
+.btn-text.primary {
+  border:none;
+  color:#6750A4;
+  background: transparent;
+  opacity: 88%;
+}
+
+
+/* Text Button Hover */
+	
+.btn-text.primary:hover {
+  color:#6750A4;
+  background: rgba(169, 132, 254, 0.208);
+  opacity: 100%;
+}
+
+/* Text Button Focus */
+
+.btn-text.primary:focus {
+  color:#6750A4;
+  outline:none;
+}
+
+/* Text Button Active */
+
+.btn-text.primary:active {
+  color:#6750A4;
+  outline:none;
+}
+
+
+/* Tonal Button */
+
+.btn-tonal.primary {
+  background-color:#E8DEF8;
+  color:#1E192B;
+  border:none;
+}
+
+/* Tonal Button Hover */
+	
+.btn-tonal.primary:hover {
+  color:#E8DEF8;
+  background-color:#625B71;
+   box-shadow: 0 0 3px 1px #949494;
+}
+
+/* Tonal Button Focus */
+
+.btn-tonal.primary:focus {
+  background-color:#1E192B;
+  color:#FFFFFF;
+  outline:none;
+}
+
+/* Tonal Button Active */
+
+.btn-tonal.primary:active {
+  background-color:#1E192B;
+  color:#FFFFFF;
+  outline:none;
+}
+
+/* Button with outline no border */
+
+.btn-with-outline{
+  border:none;
+  color:#FFFFFF;
+  background: transparent;
+  outline: 2px solid #FF8600;
+  opacity: 88%;
+}
+
+/* Button with outline no border Hover */
+
+.btn-with-outline:hover {
+  background: rgba(0,147,255,0.47);
+  opacity: 88%;
+}
+
+/* Button with outline no border Focus */
+
+.btn-with-outline:focus {
+  background: rgba(0,147,255,0.67);
+  outline-color: #FF9600;
+  opacity: 96%;
+}
+
+/* Button with outline no border Active */
+
+.btn-with-outline:active {
+  background: rgba(0,147,255,0.87);
+  opacity: 100%;
+}
+
+/* Tag a */
+
+a{
+  color:#FF9E00;
+  text-decoration:none
+}
+
+
+/* Tag a like button */
+
+a.btn{
+  text-decoration:none;
+  background-color:#008CFF;
+  border:none;
+  vertical-align:middle;
+  display:inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Yekan';	
+  min-width:64px;
+  height:40px;
+  font-size:14px;
+  cursor:pointer;
+  padding:0 24px 0 16px;
+  border-radius:2em;
+  margin:8px -4px 8px 8px;
+  border-width:1px;
+}
+
+/* Tag a like button Link */
+
+a:link {
+  color:#FF8E00;
+}
+
+/* Tag a like button Visited */
+
+a:visited {
+  color:#FF5F00;
+}
+
+/* Tag a like button Hover */
+
+a:hover {
+  color:#009BFF;
+  cursor:pointer;
+  box-shadow:hsla(24,100%,50%,1.00);
+}
+
+/* Tag a like button Focus */
+
+a:focus{
+   color:#0B5C9F;
+  outline:none;
+}
+
+/* Tag a like button Active */
+	
+a:active {
+  color:#00438A;
+  outline:none;
+}

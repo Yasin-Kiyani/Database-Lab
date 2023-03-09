@@ -1,0 +1,202 @@
+/*  یاسین کیانی : دانشجوی  ترم چهارم رشته ی کاردانی پیوسته کامپیوتر نرم افزار در دانشگاه : مهاجر */
+
+
+/* Font */
+
+@font-face {
+  font-family: 'Yekan';
+  src: url('../fonts/Yekan.eot?-wwn5ej');
+  src: url('../fonts/Yekan.eot?#iefix-wwn5ej') format('embedded-opentype'),
+  url('../fonts/Yekan.woff?-wwn5ej') format('woff'),
+  url('../fonts/Yekan.ttf?-wwn5ej') format('truetype'),
+  url('../fonts/Yekan.svg?-wwn5ej#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Leyout for catalog pafe--Product-List_View */
+
+/* body*/
+
+:root{
+margin-top: -10px;
+overflow-x: hidden;
+padding: 0px;
+width: auto;	
+}
+
+body { 
+direction:rtl;
+display: grid;
+	
+height: auto;
+grid-template-areas: 
+    "aside header"
+	"aside section"
+    "aside article "
+    "aside footer";
+  grid-template-rows: auto auto auto auto;  
+  grid-template-columns: 360px auto;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  height: 100vh;
+  margin: 0;
+  }  
+
+/* pading*/
+
+header, footer, article  {
+  padding: 1em 0px 0px 1em;	
+	
+}
+header, article  {
+  padding: 1em ;	
+	
+}
+
+/* header*/
+
+header {
+  grid-area: header;
+  }
+
+/* footer*/
+
+
+footer {
+  grid-area: footer;
+  }
+
+/* article*/
+
+article{ 
+  grid-area: article;  
+  border-radius: 2em;
+  background: rgb(79,131,167);
+  background: linear-gradient(0deg, rgba(79,131,167,1) 0%, rgba(238,169,105,1) 100%);
+  padding: 20px;
+  margin-left:  1em;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  display: grid;    
+  }
+
+/* respansiv */
+
+@media screen and (max-width: 320px){
+	
+header  {		
+margin-left: 55px;
+}
+	
+section  {		
+margin-left: 55px;
+}
+}
+
+@media screen and (max-width: 575px){	
+body{
+overflow-x: hidden;
+padding: 10px ;
+	height: auto;
+}
+	
+.goup{
+margin: 0;
+padding: 0;
+right: 0;
+}
+						
+article{
+margin: 10px 0px 0px 0px;
+width: 99%;
+border-radius: 8px;
+margin-top: 10px;
+}
+		
+article { 
+margin-top: 18px;
+} 
+		
+.banner-catalog{
+margin-top: -10px;
+}
+}
+
+/* respansiv */
+
+@media screen and (max-width: 320px){
+.goup{
+margin-right: -50px;
+}
+}
+/* aside*/
+
+aside { 
+	
+  border-top-left-radius: 16px; 
+  border-bottom-left-radius: 16px; 
+  background-color: #1F314D;
+  padding: 20px;
+  margin-left: 1em;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  grid-area: aside; 
+  }
+
+aside:hover{
+background-color: #264D72;
+transition:  0.8s;
+}
+
+/* section*/
+
+section { 
+  grid-area: section; 
+  margin-top: -30px;
+  } 
+
+/* responcive for mobiles and small devices*/
+
+
+.hidden-nave-mini { 
+	display: none;
+}
+
+@media all and (max-width: 575px) {
+  body { 
+    grid-template-areas: 
+      "header"
+	  "section"
+      "article"
+      "aside"
+      "footer";
+    grid-template-rows: auto auto auto 70px  70px;  
+    grid-template-columns: auto;
+ }
+}
+
+	/* hide mini nave */
+	
+@media screen and (max-width: 575px) {
+aside { 
+display: none;
+ 
+  }
+	
+	/* show mini nave */
+	
+@media screen and (max-width: 575px){
+.hidden-nave-mini { 
+display: block;
+}
+	
+header, footer, article  {
+padding: 0em;	
+}
+	
+article  {
+margin-left:  0em;
+padding: 10px;
+	
+}
+}
+}

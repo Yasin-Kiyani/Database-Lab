@@ -1,0 +1,241 @@
+/*  یاسین کیانی : دانشجوی  ترم چهارم رشته ی کاردانی پیوسته کامپیوتر نرم افزار در دانشگاه : مهاجر */
+
+/* product page */
+*{
+	/*	overflow-x: hidden; */
+	
+}
+.product_page {
+background: rgb(234,210,255);
+background: linear-gradient(140deg, rgba(234,210,255,1) 0%, rgba(252,231,208,0.7931547619047619) 100%);
+ display: block;
+ border-radius: 2em;
+ position: relative;
+ width:85%;
+ padding: 50px;
+ margin-right: 8%;
+ box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+}
+
+
+/* repansive */
+
+@media screen and (max-width: 575px){
+.product_page {
+width:100%;
+border-radius: 8px;
+margin-right: 0%; 	
+}
+}
+
+@media screen and (max-width: 780px){
+.product_page {
+width:100%;
+border-radius: 8px;
+margin-right: 0%;
+}
+}
+
+.product_page span {
+color: #0054FF;
+}
+
+/* go back button */
+
+.go-back {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color:#005CFF;
+  width: 0;
+  height: 0;
+  border-top: 60px solid transparent ;
+  border-right: 60px solid transparent;
+  transform:rotate(90deg);
+}
+
+.go-back:hover {
+  color: #FF7E00;
+}
+
+.go-back i {
+  font-size:20px;
+  position: relative;
+  top: -52px;
+  left: 24px;
+  transform:rotate(90deg);
+}
+
+/* product detail*/
+
+.product-details {
+  max-width: 100%;
+}
+
+.product-left {
+  display: inline-block;
+  padding-left: 4%;
+  vertical-align: top;
+  width: 46%;
+}
+
+.product-right {
+  display: inline-block;
+  vertical-align: top;
+  width: 49%;
+}
+
+@media (max-width:770px){
+.product-info span{
+font-size: 34px;
+	
+}
+}
+@media (min-width:770px){
+.product-info span{
+font-size: 34px;
+margin-right: 2px;
+	
+}
+}
+
+
+.product-bottom{border-top:1px solid #ccc; position:relative; padding-top:20px;}
+
+/* respansiv */
+
+@media (max-width:650px){
+.product-left, .product-right, .product-bottom{
+ width:100%;}
+.product-left{padding-left:0;}
+.product-info{
+display:inline-block;
+width:60%; vertical-align:top;
+}
+
+.product-image{display:inline-block; width:39%; vertical-align:top;}
+}
+
+@media (max-width:512px){
+ .product-info, .product-image{width:100%;}
+}
+
+.product-manufacturer {
+  color:#222;
+  font-size: 70px;
+  font-weight: bold;
+  line-height: 1;
+  margin: -2px;
+}
+
+/* product title */
+
+.product-title {
+  font-size: 28px;
+  color: #006CFF;
+}
+
+/* product price */
+
+.product-price {
+  color:#252525;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+/* product image */
+
+.product-image {
+  padding: 10px 10px 0 10px;
+}
+
+.product-image img {
+ width: 100%;
+ height: 100%;
+ object-fit: contain;
+ border-radius: 10px;
+}
+
+.product-description {line-height:1.5;}
+
+.product-available {
+  margin-top: 25px;
+}
+
+.product-rating{
+  margin-top:25px;
+}
+
+i.fa-star{
+	color:#AAA8A8; display:inline-block;
+}
+i.fa-star.rating{
+	color: rgb(232, 217, 31);
+}
+.product-rating-details{
+display:inline-block;
+padding-left: 10px;
+}
+
+/* reaspansiv*/
+
+@media(max-width:515px){
+ .product-rating-details{
+ padding-right:0;
+}
+}
+
+/* product number */
+
+.product-number{
+margin-top:25px;
+margin-bottom:25px;
+}
+
+/* product cheak out */
+
+.product-checkout{
+position:absolute; right:0;
+font-size: 12px;
+text-transform: uppercase;
+}
+
+.product-checkout-actions{
+position:absolute;
+left:0;
+}
+
+.product-checkout-total, .product-checkout-total-amount{
+font-size: 20px; 
+color: #C17A41;
+}
+
+/* product total */
+
+.product-checkout-total * {
+display:inline-block;
+}
+
+.product-number-label{
+text-transform:uppercase;
+}
+
+.product-number *{
+display:inline-block;
+}
+
+#product-number-input{
+	background-color: #FFFFFF;
+	border: none; 
+	width:2.5em;
+	text-align: center;
+}
+.product-number-subtract, .product-number-add{
+	padding-right:5px;
+	padding-left: 5px;
+	background-color: #E1E1E1;
+}
+.product-number-subtract{
+	margin-right:20px;
+}
